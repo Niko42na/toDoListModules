@@ -1,0 +1,22 @@
+import {    
+	loadTasks, 
+    createTask, 
+	removeTask,
+	removeAllTasks,
+    filterItems
+} from "./functions.js";
+
+import {
+	form,
+    taskList,
+    filter,
+    clearBtn,
+} from './constants.js';
+
+
+// побачити всі таски +
+document.addEventListener('DOMContentLoaded', loadTasks);
+form.addEventListener('submit', createTask);
+taskList.addEventListener('click', removeTask);
+clearBtn.addEventListener('click', removeAllTasks);
+filter.addEventListener('keyup', filterItems);
