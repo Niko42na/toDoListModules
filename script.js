@@ -14,7 +14,7 @@ import {
 } from './constants.js';
 
 
-// побачити всі таски +
+// додаємо функції для обробників подій
 document.addEventListener('DOMContentLoaded', loadTasks);
 form.addEventListener('submit', createTask);
 taskList.addEventListener('click', removeTask);
